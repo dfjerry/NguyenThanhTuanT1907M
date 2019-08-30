@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NoNameTeam-League of Legends</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-left">
+            <a href="https://projectnonameteam.herokuapp.com/"> <img src="LOGOTEAM.png"/></a>
+        </div>
+        <div class="header-right">
+            <a id="anh1" href="https://www.facebook.com/vnesportstv/photos/a.217520941759563/1342398792605100/?type=3&theater"><img src="http://lienminh360.vn/wp-content/uploads/2019/06/64584510_306521573587795_3175576047022243840_n.jpg"></a>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="sc1">
+
+        </div>
+        <div class="sc2">
+
+        </div>
+        <div class="sc3">
+
+        </div>
+        <div class="sc4">
+
+        </div>
+        <div class="sc5">
+
+        </div>
+        <div class="sc6">
+
+        </div>
+    </div>
+</section>
+<footer>
+
+</footer>
+
+</body>
+</html>
