@@ -462,27 +462,3 @@ footer .footer-trai-duoi a{
     padding-right: 35px;
 }
 
-/* CSS show submenu */
-.menu-item{
-    position: relative;
-}
-.submenu{
-    display: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: white;
-}
-.submenu li{
-    float: left;
-    width: 100%;
-    padding: 5px 0;
-    border-top: 1px solid #cccccc;
-    background-color: white;
-}
-.submenu li a{
-    color: #333333;
-    font-size: 15px;
-    margin-left: 30px;
-}
-

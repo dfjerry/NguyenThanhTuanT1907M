@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/testlol.png"/>
+    <script type="text/javascript" src="jQuery/jQuery.js"></script>
 </head>
 <body>
 <header>
@@ -24,13 +25,66 @@
         <div class="sc1">
             <div class="tieudetrai">
                 <div class="tieude1-trai">
-                    <ul>
+                    <ul class="menu">
                         <li id="trangchu1"><a href="https://projectnonameteam.herokuapp.com/"> Trang chủ</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin nổi bật</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin game</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin Esport</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Cẩm nang</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh</a></li>
+
+                        <li  class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin nổi bật</a>
+                            <ul class="submenu">
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html"> Summoner rift</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-DTCL.html">ĐTCL</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-aram.html">ARAM</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-URF.html">URF</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-rung-quy-di.html">RỪNG QUỶ DỊ</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-cuop-co.html">CƯỚP CỜ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin game</a>
+                            <ul class="submenu">
+                                <li><a href="#">PHÂN TÍCH </a></li>
+                                <li><a href="#">TRANG PHỤC </a></li>
+                                <li><a href="#">PHÁT TRIỂN </a></li>
+                                <li><a href="#">XU HƯỚNG </a></li>
+                                <li><a href="#">PBE </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin Esport</a>
+                            <ul class="submenu">
+                                <li><a href="#">LỊCH THI ĐẤU </a></li>
+                                <li><a href="#">VCS </a></li>
+                                <li><a href="#">LPL/LCK </a></li>
+                                <li><a href="#">LCS/LEC </a></li>
+                                <li><a href="#">QUỐC TẾ </a></li>
+                                <li><a href="#">CÁC KHU VỰC KHÁC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                            <a href="https://projectnonameteam.herokuapp.com/">Cẩm nang</a>
+                            <ul class="submenu">
+                                <li><a href="#">CHIẾN THUẬT </a></li>
+                                <li><a href="#">CƠ CHẾ HOẠT ĐỘNG </a></li>
+                                <li><a href="#">TƯỚNG </a></li>
+                                <li><a href="#">KHÁC </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                            <a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh</a>
+                            <ul class="submenu">
+                                <li><a href="#">HIGHTLIGHTS GIẢI ĐẤU </a></li>
+                                <li><a href="#">HÀI HƯỚC </a></li>
+                                <li><a href="#">HIGHTLIGHTS </a></li>
+                                <li><a href="#">FAN ART </a></li>
+                                <li><a href="#">GIẢI ĐẤU </a></li>
+                                <li><a href="#">COSPLAY</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -332,6 +386,18 @@
         </div>
     </div>
 </footer>
+<script>
 
+    function showsubmenu(e){
+        var li = $(e);
+        var sub = li.children(".submenu");
+        sub.slideDown();
+    }
+    function hidesubmenu(e){
+        var li = $(e);
+        var sub = li.children(".submenu");
+        sub.hide();
+    }
+</script>
 </body>
 </html>
