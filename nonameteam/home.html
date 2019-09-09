@@ -6,7 +6,10 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/testlol.png"/>
+    <link rel="stylesheet" type="text/css" href="CSS/default.css">
+    <link rel="stylesheet" type="text/css" href="CSS/nivo-slider.css">
     <script type="text/javascript" src="jQuery/jQuery.js"></script>
+    <script type="text/javascript" src="jQuery/jquery.nivo.slider.js"></script>
 </head>
 <body>
 <header>
@@ -18,8 +21,21 @@
             <a id="anh1" href="https://www.facebook.com/vnesportstv/photos/a.217520941759563/1342398792605100/?type=3&theater" target="_blank"><img src="http://lienminh360.vn/wp-content/uploads/2019/06/64584510_306521573587795_3175576047022243840_n.jpg"></a>
         </div>
     </div>
-
 </header>
+<section>
+    <div class="container">
+        <div id="wrapper">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="image/ahri1.jpg">
+                    <img src="image/veigar1.jpg">
+                    <img src="image/vbtt4.jpg">
+                    <img src="image/vbtt5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section>
     <div class="container">
         <div class="sc1">
@@ -28,7 +44,7 @@
                     <ul class="menu">
                         <li id="trangchu1"><a href="https://projectnonameteam.herokuapp.com/"> Trang chủ</a></li>
 
-                        <li  class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                        <li  class="menu-item parent"  onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
                             <a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html">Tin nổi bật</a>
                             <ul class="submenu">
                                 <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html"> Summoner rift</a></li>
@@ -40,7 +56,7 @@
                             </ul>
                         </li>
 
-                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                        <li class="menu-item parent" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
                             <a href="https://projectnonameteam.herokuapp.com/">Tin game</a>
                             <ul class="submenu">
                                 <li><a href="#">PHÂN TÍCH </a></li>
@@ -51,7 +67,7 @@
                             </ul>
                         </li>
 
-                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                        <li class="menu-item parent" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
                             <a href="https://projectnonameteam.herokuapp.com/">Tin Esport</a>
                             <ul class="submenu">
                                 <li><a href="#">LỊCH THI ĐẤU </a></li>
@@ -63,7 +79,7 @@
                             </ul>
                         </li>
 
-                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                        <li class="menu-item parent" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
                             <a href="https://projectnonameteam.herokuapp.com/">Cẩm nang</a>
                             <ul class="submenu">
                                 <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-chienthuat.html">CHIẾN THUẬT </a></li>
@@ -73,7 +89,7 @@
                             </ul>
                         </li>
 
-                        <li class="menu-item" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
+                        <li class="menu-item parent" onmouseenter="showsubmenu(this)" onmouseleave="hidesubmenu(this)">
                             <a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh</a>
                             <ul class="submenu">
                                 <li><a href="#">HIGHTLIGHTS GIẢI ĐẤU </a></li>
@@ -386,7 +402,23 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#slider').nivoSlider();
+    });
+</script>
 <script>
+
+    $(".menu-item.parent").bind("mouseenter",function (){
+        var li = $(this);
+        var sub = li.children(".submenu");
+        sub.slideDown();
+    });
+    $(".menu-item.parent").bind("mouseleave",function (){
+        var li = $(this);
+        var sub = li.children(".submenu");
+        sub.slideDown();
+    });
 
     function showsubmenu(e){
         var li = $(e);
