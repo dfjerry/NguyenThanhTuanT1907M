@@ -17,7 +17,6 @@ header{
     margin: 10px auto;
     float: left;
     padding: 8px 0;
-
 }
 
 img{
@@ -436,6 +435,7 @@ footer{
     padding-right: 35px;
     margin-bottom: 30px;
 }
+
 footer a{
     color: white;
     font-size: 14px;
@@ -472,6 +472,7 @@ footer .footer-trai-duoi a{
     width: 200px;
     height: 200px;
     background-color: white;
+    z-index: 20;
 }
 .submenu li{
     float: left;
@@ -480,8 +481,15 @@ footer .footer-trai-duoi a{
     border-top: 1px solid #cccccc;
     background-color: white;
 }
-.submenu li a{
+.submenu li a {
     color: #333333;
     font-size: 15px;
     margin-left: 30px;
+}
+/* về đầu trang */
+.vedautrang{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: coral;
 }

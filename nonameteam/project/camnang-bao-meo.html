@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="home.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/testlol.png"/>
+    <link rel="stylesheet" type="text/css" href="CSS/default.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/nivo-slider.css"/>
+    <script type="text/javascript" src="jQuery/jQuery.js"></script>
+    <script type="text/javascript" src="jQuery/jquery.nivo.slider.js"></script>
 </head>
 <body>
 <header>
@@ -38,6 +42,16 @@
                     <form action="#"method="post">
                         <input type="text" name="Timkiem" placeholder="Search..." >
                     </form>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="CSS/sld1.png"/>
+                    <img src="CSS/sld2.png"/>
+                    <img src="CSS/sld3.png"/>
+                    <img src="CSS/sld4.png"/>
                 </div>
             </div>
         </div>
@@ -138,4 +152,9 @@
     </div>
 </footer>
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#slider').nivoSlider();
+    })
+</script>
 </html>
