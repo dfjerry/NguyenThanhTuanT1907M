@@ -3,6 +3,7 @@
     padding: 0;
 }
 body {
+    width: 100%;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -11,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 header{
     width: 100%;
@@ -18,7 +20,11 @@ header{
     float: left;
     padding: 8px 0;
 }
-
+section{
+    width: 100%;
+}footer{
+    width: 100%;
+}
 img{
     max-width: 100%;
 }
@@ -34,6 +40,7 @@ a{
 header .header-left  img{
     width: 20%;
     float: left;
+
 }
 header .header-right  img{
     width: 60%;
@@ -46,48 +53,52 @@ header .header-right  img{
 /*    padding: 10px 20px;*/
 /*    background-color: #131313;*/
 /*}*/
+.sc1{
+    width: 100%;
+    float: left;
+    background-color: black;
+}
 
 .tieude1-trai{
-    width: 80%;
+    width: 85%;
     float: left;
-    margin-bottom: 50px;
+    padding: 0 0 30px 0;
 }
 .tieude1-trai a{
-    color: #131313;
+    color: white;
 }
 .tieude1-phai{
     width: 12%;
-    float: right;
+    float: left;
     padding: 10px 20px;
-    margin-bottom: 50px;
+    box-sizing: border-box;
 }
 .tieude1-trai ul{
-    margin-left: 50px;
+    margin-left: 0;
     background-color: #131313;
 }
 .tieude1-trai ul > li{
     list-style: none;
     float: left;
     text-decoration: none;
-    margin-right: 35px;
+    margin-right: 36px;
     color: white;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 18px;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 10px 0px 10px 0px;
 }
-.tieude1-trai a:hover{
-    color: cornflowerblue;
-}
+/*.tieude1-trai a:hover{*/
+/*    color: cornflowerblue;*/
+/*    transition: color 300ms;*/
+/*}*/
 #trangchu1{
-    color: white;
     padding: 10px 20px;
 }
-.trangchu1 a:hover{
-    color: darkorange;
-    transition: color 300ms;
-    text-decoration-skip-ink: none;
-}
+/*.trangchu1 a:hover{*/
+/*    color: darkorange;*/
+/*    transition: color 300ms;*/
+/*    text-decoration-skip-ink: none;*/
+/*}*/
 .tieude-form form input{
     border: 1px solid #131313;
     border-radius: 5px;
@@ -95,9 +106,31 @@ header .header-right  img{
     color: coral;
     margin-right: 50px;
 }
+/*sc*/
+.thumb{
+    width: 100%;
+    float: left;
+    padding: 10px 0 10px 0;
+    background-color: white;
+}
+.thumb-left{
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 50px;
+}
+.thumb-right{
+    width: 45%;
+    box-sizing: border-box;
+    float: left;
+
+}
 
 /*section2-Tuan*/
-
+.sc2{
+    width: 100%;
+    padding: 50px 0 0 0;
+}
 .sc2-tren{
     width: 100%;
     float: left;
@@ -159,6 +192,7 @@ header .header-right  img{
 
 .sc2-duoi-1-chu a:hover{
     color: cornflowerblue;
+    transition: color 300ms;
 }
 .sc2-duoi-2{
     width: 23%;
@@ -184,7 +218,7 @@ header .header-right  img{
     width: 94%;
     float: left;
     background-color: white;
-    padding: 40px 50px 50px 40px;
+    padding: 40px 50px 50px 25px;
 }
 .datebaibao{
     box-sizing: border-box;
@@ -262,6 +296,7 @@ hr{
 }
 .baibao-phai-duoi-text a:hover{
     color: cornflowerblue;
+    transition: color 300ms;
 }
 .anhdtcl22{
     margin-left: 150px;
@@ -286,6 +321,7 @@ ul{
     color: white;
     text-transform: uppercase;
     font-size: 16px;
+    transition: color 300ms;
 }
 .baibaotin{
     width: 100%;
@@ -303,6 +339,7 @@ ul{
 }
 .baibaotin-phai a:hover{
     color: cornflowerblue;
+    transition: color 300ms;
 }
 
 /*section3-Nghia*/
@@ -337,6 +374,7 @@ img{
 }
 .top-left a:hover{
     color: cornflowerblue;
+    transition: color 300ms;
 }
 .top-right {
     float: right;
@@ -356,6 +394,7 @@ img{
 }
 .top-right ul li a:hover{
     color: cornflowerblue;
+    transition: color 300ms;
 }
 .bot{
     width: 100%;
@@ -401,10 +440,9 @@ img{
 
 /*section6-A.Lam*/
 footer{
-    width: 100%;
     float: left;
     background-color: #131313;
-    padding: 20px 50px 20px 50px;
+    padding: 10px 0 10px 0;
     margin: 0;
     color: white;
 }
@@ -420,7 +458,6 @@ footer{
 }
 .footer-trai-tren ul{
     margin-top: 40px;
-
 }
 .footer-trai-tren ul > li{
     list-style: none;
@@ -439,6 +476,7 @@ footer{
 footer a{
     color: white;
     font-size: 14px;
+    box-sizing: border-box;
 }
 footer .footer-trai-duoi a{
     color: cyan;
@@ -455,7 +493,6 @@ footer .footer-trai-duoi a{
 .footer-trai-duoi ul > li{
     margin-top: 5px;
     list-style: square;
-    margin-right: 50px;
     color: white;
     text-transform: capitalize;
     font-size: 15px;
@@ -463,33 +500,50 @@ footer .footer-trai-duoi a{
 }
 
 /* CSS show submenu */
+
 .menu-item{
     position: relative;
 }
+
 .submenu{
     display: none;
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background-color: white;
+    width: 180px;
     z-index: 20;
 }
 .submenu li{
     float: left;
     width: 100%;
     padding: 5px 0;
-    border-top: 1px solid #cccccc;
-    background-color: white;
+    border-bottom: 1px solid #6A6A6A;
+}
+.submenu .li-top{
+    border-top: 6px solid coral;
 }
 .submenu li a {
-    color: #333333;
+    color: white;
     font-size: 15px;
     margin-left: 30px;
+    text-transform: capitalize;
+}
+.submenu li i{
+    margin-right: 10px;
 }
 /* về đầu trang */
 .vedautrang{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: coral;
+    font-size: 50px;
+}
+
+#map {
+    height: 100%;
+}
+
+.thongtinlienhe{
+    width: 100%;
+    color: black;
+    font-size: 25px;
+    line-height: 2;
 }
