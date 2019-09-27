@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>NoNameTeam-League of Legends</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/testlol.png"/>
-    <link rel="stylesheet" type="text/css" href="CSS/default.css">
-    <link rel="stylesheet" type="text/css" href="CSS/nivo-slider.css">
     <script type="text/javascript" src="jQuery/jQuery.js"></script>
     <script type="text/javascript" src="jQuery/jquery.nivo.slider.js"></script>
+
+    <script src="https://kit.fontawesome.com/f6a2d13c29.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--    <link rel="shortcut icon" type="image/png" href="/testlol.png"/>-->
+
+    <link rel="stylesheet" type="text/css" href="CSS/default.css">
+    <link rel="stylesheet" type="text/css" href="CSS/nivo-slider.css">
+
+
 </head>
 <body>
 <header>
@@ -27,13 +35,63 @@
         <div class="sc1">
             <div class="tieudetrai">
                 <div class="tieude1-trai">
-                    <ul>
+                    <ul class="menu">
                         <li id="trangchu1"><a href="https://projectnonameteam.herokuapp.com/"> Trang chủ</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin nổi bật</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin game</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin Esport</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Cẩm nang</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh</a></li>
+                        <li  class="menu-item parent" >
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html" >Tin nổi bật <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html"><i class="fas fa-dragon"></i> Summoner rift </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-DTCL.html" ><i class="fab fa-d-and-d"></i> ĐTCL</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-aram.html" ><i class="fas fa-democrat"></i> ARAM</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-URF.html" ><i class="fas fa-fist-raised"></i> URF</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-rung-quy-di.html" ><i class="fas fa-skull-crossbones"></i> RỪNG QUỶ DỊ</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-cuop-co.html" ><i class="fas fa-chess-queen"></i> CƯỚP CỜ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin game <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/tingame-phantich.html" ><i class="fas fa-trophy"></i> PHÂN TÍCH </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-trangphuc.html" ><i class="fab fa-d-and-d"></i> TRANG PHỤC </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-phantich.html" ><i class="fas fa-democrat"></i> PHÁT TRIỂN </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-xuhuong.html"><i class="fas fa-fist-raised"></i> XU HƯỚNG </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-PBE.html" ><i class="fas fa-skull-crossbones"></i> PBE </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin Esport <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/tinesport-muclichthidau.html" ><i class="fas fa-trophy"></i> LỊCH THI ĐẤU </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-mucvcs.html" ><i class="fab fa-d-and-d"></i> VCS </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muc-lck-lpl.html" ><i class="fas fa-democrat"></i> LPL/LCK </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muc-lcs-lec.html" ><i class="fas fa-fist-raised"></i> LCS/LEC </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-mucquocte.html" ><i class="fas fa-skull-crossbones"></i> QUỐC TẾ </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muckhuvuckhac.html" ><i class="fas fa-chess-queen"></i> CÁC KV KHÁC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Cẩm nang <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/project/camnang-chienthuat.html" ><i class="fas fa-trophy"></i> CHIẾN THUẬT </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-coche.html" ><i class="fab fa-d-and-d"></i> CƠ CHẾ HĐ </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-tuong.html" ><i class="fas fa-democrat"></i> TƯỚNG </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-khac.html" ><i class="fas fa-fist-raised"></i> KHÁC </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/videoanh-hightlightsgiai.html" ><i class="fas fa-democrat"></i> HIGHTLIGHTS </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/videoanh-haihuoc.html" ><i class="fab fa-d-and-d"></i> HÀI HƯỚC </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/videoanh-fanart.html" ><i class="fas fa-fist-raised"></i> FAN ART </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/videoanh-cosplay.html" ><i class="fas fa-chess-queen"></i> COSPLAY</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -42,16 +100,6 @@
                     <form action="#"method="post">
                         <input type="text" name="Timkiem" placeholder="Search..." >
                     </form>
-                </div>
-            </div>
-        </div>
-        <div id="wrapper">
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <a href="https://projectnonameteam.herokuapp.com/tinnoibat-dtcl-9-vang-cho-3-vong.html" target="_blank"><img src="CSS/sld1.png"></a>
-                    <a href="http://localhost:63342/nonameteam/tingame-chi-tiet-hinh-anh-trang-phuc.html" target="_blank"> <img src="CSS/sld2.png"></a>
-                    <a href="https://projectnonameteam.herokuapp.com/project/camnang-chienthuat.html" target="_blank"> <img src="CSS/sld3.png"></a>
-                    <a href="https://projectnonameteam.herokuapp.com/tinnoibat-DTCL.html" target="_blank"> <img src="CSS/sld4.png"></a>
                 </div>
             </div>
         </div>
@@ -122,61 +170,61 @@
                 </ul>
                 <p class="title-dtcl">Tướng</p>
                 <img src="image/dtclgraves.png"><b>Graves</b>
-                <ul>
-                    <li>Chỉnh sửa lại tương tác với Đại Bác Liên Thanh. Graves vẫn giữ tầm đánh như vậy, nhưng độ rộng của <br/>
-                        nó sẽ giảm xuống, giống như phát bắn shotgun thật.</li>
-                </ul>
+                    <ul>
+                        <li>Chỉnh sửa lại tương tác với Đại Bác Liên Thanh. Graves vẫn giữ tầm đánh như vậy, nhưng độ rộng của <br/>
+                            nó sẽ giảm xuống, giống như phát bắn shotgun thật.</li>
+                    </ul>
                 <img src="image/dtclww.png"><b>Warwick</b>
-                <ul>
-                    <li>Máu: 600 ⇒ 650</li>
-                </ul>
+                    <ul>
+                        <li>Máu: 600 ⇒ 650</li>
+                    </ul>
                 <img src="image/dtclliss.png"><b>Lissandra</b>
-                <ul>
-                    <li>Máu: 450 ⇒ 500</li>
-                    <li>Năng lượng khởi đầu/tổng: 50/125 ⇒ 0/85</li>
-                    <li>Sát thương kỹ năng: 150/275/400 ⇒ 175/325/475</li>
-                </ul>
+                    <ul>
+                        <li>Máu: 450 ⇒ 500</li>
+                        <li>Năng lượng khởi đầu/tổng: 50/125 ⇒ 0/85</li>
+                        <li>Sát thương kỹ năng: 150/275/400 ⇒ 175/325/475</li>
+                    </ul>
                 <img src="image/dtcllucian.png"><b>Lucian</b>
-                <ul>
-                    <li>Phát bắn thứ hai từ Truy Cùng Diệt Tận giờ sẽ tỉ lệ với tốc độ đánh của Lucian.</li>
-                </ul>
+                    <ul>
+                        <li>Phát bắn thứ hai từ Truy Cùng Diệt Tận giờ sẽ tỉ lệ với tốc độ đánh của Lucian.</li>
+                    </ul>
                 <img src="image/dtclgang.png"><b>Gangplank</b>
-                <ul>
-                    <li>Sát thương kỹ năng: 200/325/450 ⇒ 150/250/350</li>
-                </ul>
+                    <ul>
+                        <li>Sát thương kỹ năng: 200/325/450 ⇒ 150/250/350</li>
+                    </ul>
                 <img src="image/dtclleona.png"><b>Leona</b>
-                <ul>
-                    <li>Thời gian làm choáng: 5/8/11 giây ⇒ 5/7/9 giây</li>
-                </ul>
+                    <ul>
+                        <li>Thời gian làm choáng: 5/8/11 giây ⇒ 5/7/9 giây</li>
+                    </ul>
                 <p class="title-dtcl">Thay Đổi Hồi Máu</p>
                 <p>Các hiệu ứng hồi máu luôn được điều chỉnh dựa trên hiệu ứng Vết Thương Sâu. Và vì chúng tôi đã giảm sức<br/>
                     mạnh Vết Thương Sâu, nên chúng tôi cũng sẽ chỉnh sửa độ hiệu quả của hiệu ứng hồi máu, khiến chúng<br/>
                     không trở nên quá mạnh.</p>
-                <ul>
-                    <li>Giảm hồi máu từ Vết Thương Sâu: 100% ⇒ 80%</li>
-                    <li>Hồi máu từ Huyết Kiếm: 50% sát thương đòn đánh ⇒ 40% sát thương đòn đánh</li>
-                    <li>Hồi máu từ Kiếm Súng Hextech: 33% sát thương gây ra ⇒ 25% sát thương gây ra</li>
-                    <li>Hồi máu từ Hóa Quỷ của Swain: 50/90/130 ⇒ 40/70/100</li>
-                </ul>
+                    <ul>
+                        <li>Giảm hồi máu từ Vết Thương Sâu: 100% ⇒ 80%</li>
+                        <li>Hồi máu từ Huyết Kiếm: 50% sát thương đòn đánh ⇒ 40% sát thương đòn đánh</li>
+                        <li>Hồi máu từ Kiếm Súng Hextech: 33% sát thương gây ra ⇒ 25% sát thương gây ra</li>
+                        <li>Hồi máu từ Hóa Quỷ của Swain: 50/90/130 ⇒ 40/70/100</li>
+                    </ul>
                 <p class="title-dtcl">Sửa Lỗi</p>
-                <ul>
-                    <li>Lỗi tộc Công Nghệ: Khiến Vô Cực Kiếm mất nhiều sát thương chí mạng hơn bình thường đã được sửa.</li>
-                    <li>Lỗi tộc Công Nghệ: Khiến cho Nỏ Sét bị mất hiệu ứng đã được sửa.</li>
-                    <li>Lỗi tộc Công Nghệ: Khiến Lá Cờ Zeke bị mất hiệu ứng đã được sửa.</li>
-                    <li>Lỗi tộc Công Nghệ: Khiến Dây Chuyền Iron Solari mất hiệu ứng đã được sửa.</li>
-                    <li>Cải thiện logic kỹ năng của Shyvana. Shyvana sẽ tìm kiếm vị trí để nhảy làm sao cho cách xa mục tiêu <br/>
-                        của mình.</li>
-                    <li>Lỗi khiến Rek’Sai không hất tung chính xác mục tiêu ở tầm xa đã được sửa.</li>
-                    <li>Lỗi khiến Warwick xuất hiện trở lại mặc dù đã bị tiêu diệt trong lúc nhảy (lúc thi triển kỹ năng) đã được <br/>
-                        sửa.</li>
-                    <li>Sửa sát thương kỹ năng của Warwick tỉ lệ với SMCK cộng thêm.</li>
-                    <li>Ahri sẽ không thi triển kỹ năng vào kẻ địch không ở trong tầm nữa.</li>
-                    <li>Lucian sẽ kích hoạt chính xác hiệu ứng tấn công (Dao Điện Statikk, Cuồng Cung Runaan) ở phát bắn<br/>
-                        đầu tiên sau khi lướt.</li>
-                    <li>Sửa lỗi Luden không kích hoạt nếu mục tiêu của kỹ năng bị hạ gục.</li>
-                    <li>Sửa lỗi chiêu cuối Vi thỉnh thoảng bị chồng lên nhau và lên cùng một kẻ địch.</li>
-                    <li>Sửa lỗi Linh Thú chạy được vào phía trong vòng ở lúc đi chợ.</li>
-                </ul>
+                    <ul>
+                        <li>Lỗi tộc Công Nghệ: Khiến Vô Cực Kiếm mất nhiều sát thương chí mạng hơn bình thường đã được sửa.</li>
+                        <li>Lỗi tộc Công Nghệ: Khiến cho Nỏ Sét bị mất hiệu ứng đã được sửa.</li>
+                        <li>Lỗi tộc Công Nghệ: Khiến Lá Cờ Zeke bị mất hiệu ứng đã được sửa.</li>
+                        <li>Lỗi tộc Công Nghệ: Khiến Dây Chuyền Iron Solari mất hiệu ứng đã được sửa.</li>
+                        <li>Cải thiện logic kỹ năng của Shyvana. Shyvana sẽ tìm kiếm vị trí để nhảy làm sao cho cách xa mục tiêu <br/>
+                            của mình.</li>
+                        <li>Lỗi khiến Rek’Sai không hất tung chính xác mục tiêu ở tầm xa đã được sửa.</li>
+                        <li>Lỗi khiến Warwick xuất hiện trở lại mặc dù đã bị tiêu diệt trong lúc nhảy (lúc thi triển kỹ năng) đã được <br/>
+                            sửa.</li>
+                        <li>Sửa sát thương kỹ năng của Warwick tỉ lệ với SMCK cộng thêm.</li>
+                        <li>Ahri sẽ không thi triển kỹ năng vào kẻ địch không ở trong tầm nữa.</li>
+                        <li>Lucian sẽ kích hoạt chính xác hiệu ứng tấn công (Dao Điện Statikk, Cuồng Cung Runaan) ở phát bắn<br/>
+                            đầu tiên sau khi lướt.</li>
+                        <li>Sửa lỗi Luden không kích hoạt nếu mục tiêu của kỹ năng bị hạ gục.</li>
+                        <li>Sửa lỗi chiêu cuối Vi thỉnh thoảng bị chồng lên nhau và lên cùng một kẻ địch.</li>
+                        <li>Sửa lỗi Linh Thú chạy được vào phía trong vòng ở lúc đi chợ.</li>
+                    </ul>
             </div>
             <div class="baibao-phai">
                 <div class="baibao-phai-tren">
@@ -188,25 +236,25 @@
 
                     <div class="tnb">
                         <div class="baibao-phai-duoi-anh">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-dtcl-9-vang-cho-3-vong.html" target="_blank"><img src="image/DTCL-1.jpg"></a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-dtcl-9-vang-cho-3-vong.html"><img src="image/DTCL-1.jpg"></a>
                         </div>
                         <div class="baibao-phai-duoi-text">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-dtcl-9-vang-cho-3-vong.html" target="_blank">9 vàng cho 3 vòng đánh quái, xui xẻo hay may mắn?</a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-dtcl-9-vang-cho-3-vong.html" >9 vàng cho 3 vòng đánh quái, xui xẻo hay may mắn?</a>
                         </div>
                     </div>
 
                     <div class="tnb">
                         <div class="baibao-phai-duoi-anh">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-cac-tuong-he-trong-DTCL.html" target="_blank"><img src="image/DTCL-2.jpg"></a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-cac-tuong-he-trong-DTCL.html"><img src="image/DTCL-2.jpg"></a>
                         </div>
                         <div class="baibao-phai-duoi-text">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-cac-tuong-he-trong-DTCL.html" target="_blank">Các tướng, tộc, hệ trong đấu trường chân lý</a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-cac-tuong-he-trong-DTCL.html">Các tướng, tộc, hệ trong đấu trường chân lý</a>
                         </div>
                     </div>
 
                     <div class="tnb">
                         <div class="baibao-phai-duoi-anh">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-th-trang-bi-DTCL.html" target="_blank"><img src="image/DTCL-3.jpg"></a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-th-trang-bi-DTCL.html" ><img src="image/DTCL-3.jpg"></a>
                         </div>
                         <div class="baibao-phai-duoi-text">
                             <a href="https://projectnonameteam.herokuapp.com/tinnoibat-th-trang-bi-DTCL.html" target="_blank">Tổng hợp các trang bị ghép trong ĐTCL</a>
@@ -215,10 +263,10 @@
 
                     <div class="tnb">
                         <div class="baibao-phai-duoi-anh">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-pantheon-DTCL.html" target="_blank"><img src="image/DTCL4.jpg"></a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-pantheon-DTCL.html" "><img src="image/DTCL4.jpg"></a>
                         </div>
                         <div class="baibao-phai-duoi-text">
-                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-pantheon-DTCL.html" target="_blank">Pantheon tướng mới xuất hiện trong DTCL yếu hay mạnh?</a>
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-pantheon-DTCL.html" >Pantheon tướng mới xuất hiện trong DTCL yếu hay mạnh?</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +274,7 @@
 
         </div>
     </div>
-
+    </div>
 </section>
 <footer>
     <div class="container">
@@ -257,7 +305,7 @@
         </div>
     </div>
 </footer>
-<a class="vedautrang">Về đầu trang</a>
-<script type="text/javascript" src="homejs.js"></script>
+<script type="text/javascript" src="homejs.js">
+</script>
 </body>
 </html>

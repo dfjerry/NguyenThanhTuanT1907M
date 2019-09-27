@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="initial-scale=1.0">
     <meta charset="UTF-8">
     <title>NoNameTeam-League of Legends</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="/testlol.png"/>
-    <link rel="stylesheet" type="text/css" href="CSS/default.css">
-    <link rel="stylesheet" type="text/css" href="CSS/nivo-slider.css">
     <script type="text/javascript" src="jQuery/jQuery.js"></script>
     <script type="text/javascript" src="jQuery/jquery.nivo.slider.js"></script>
+
+    <script src="https://kit.fontawesome.com/f6a2d13c29.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="testlol.png">
+    <!--    <link rel="shortcut icon" type="image/png" href="/testlol.png"/>-->
+
+    <link rel="stylesheet" type="text/css" href="CSS/default.css">
+    <link rel="stylesheet" type="text/css" href="CSS/nivo-slider.css">
+
+
 </head>
 <body>
 <header>
@@ -22,39 +32,87 @@
         </div>
     </div>
 </header>
-<section>
+<section id="myHeader">
     <div class="container">
         <div class="sc1">
             <div class="tieudetrai">
                 <div class="tieude1-trai">
-                    <ul>
+                    <ul class="menu">
                         <li id="trangchu1"><a href="https://projectnonameteam.herokuapp.com/"> Trang chủ</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin nổi bật</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin game</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Tin Esport</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Cẩm nang</a></li>
-                        <li><a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh</a></li>
+                        <li  class="menu-item parent" >
+                            <a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html" >Tin nổi bật <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html"><i class="fas fa-caret-right"></i> Summoner rift </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-DTCL.html" ><i class="fas fa-caret-right"></i> ĐTCL</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-aram.html" ><i class="fas fa-caret-right"></i> ARAM</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-URF.html" ><i class="fas fa-caret-right"></i> URF</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-rung-quy-di.html" ><i class="fas fa-caret-right"></i> RỪNG QUỶ DỊ</a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-cuop-co.html" ><i class="fas fa-caret-right"></i> CƯỚP CỜ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin game <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/tingame-phantich.html" ><i class="fas fa-caret-right"></i> PHÂN TÍCH </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-trangphuc.html" ><i class="fas fa-caret-right"></i> TRANG PHỤC </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-phantich.html" ><i class="fas fa-caret-right"></i> PHÁT TRIỂN </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-xuhuong.html"><i class="fas fa-caret-right"></i> XU HƯỚNG </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tingame-PBE.html" ><i class="fas fa-caret-right"></i> PBE </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Tin Esport <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/tinesport-muclichthidau.html" ><i class="fas fa-caret-right"></i> LỊCH THI ĐẤU </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-mucvcs.html" ><i class="fas fa-caret-right"></i> VCS </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muc-lck-lpl.html" ><i class="fas fa-caret-right"></i> LPL/LCK </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muc-lcs-lec.html" ><i class="fas fa-caret-right"></i> LCS/LEC </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-mucquocte.html" ><i class="fas fa-caret-right"></i> QUỐC TẾ </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muckhuvuckhac.html" ><i class="fas fa-caret-right"></i> CÁC KV KHÁC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Cẩm nang <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="https://projectnonameteam.herokuapp.com/project/camnang-chienthuat.html" ><i class="fas fa-caret-right"></i> CHIẾN THUẬT </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-coche.html" ><i class="fas fa-caret-right"></i> CƠ CHẾ HĐ </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-tuong.html" ><i class="fas fa-caret-right"></i> TƯỚNG </a></li>
+                                <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-khac.html" ><i class="fas fa-caret-right"></i> KHÁC </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item parent">
+                            <a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh <i class="fas fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li class="li-top"><a href="#" ><i class="fas fa-caret-right"></i> HIGHTLIGHTS </a></li>
+                                <li><a href="#" ><i class="fas fa-caret-right"></i> HÀI HƯỚC </a></li>
+                                <li><a href="#" ><i class="fas fa-caret-right"></i> FAN ART </a></li>
+                                <li><a href="#" ><i class="fas fa-caret-right"></i> COSPLAY</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>
             </div>
             <div class="tieude1-phai">
                 <div class="tieude-form">
-                    <form action="#"method="post">
+                    <div class="input">
                         <input type="text" name="Timkiem" placeholder="Search..." >
-                    </form>
+                    </div>
+                    <div class="button">
+                        <button class="button" type="submit">Search</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="wrapper">
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <a href="https://projectnonameteam.herokuapp.com/tinnoibat-dtcl-9-vang-cho-3-vong.html" target="_blank"><img src="CSS/sld1.png"></a>
-                    <a href="http://localhost:63342/nonameteam/tingame-chi-tiet-hinh-anh-trang-phuc.html" target="_blank"> <img src="CSS/sld2.png"></a>
-                    <a href="https://projectnonameteam.herokuapp.com/project/camnang-chienthuat.html" target="_blank"> <img src="CSS/sld3.png"></a>
-                    <a href="https://projectnonameteam.herokuapp.com/tinnoibat-DTCL.html" target="_blank"> <img src="CSS/sld4.png"></a>
-                </div>
-            </div>
-        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+
         <div class="scbaibao">
             <div class="baibao-trai">
                 <h4>Các tướng, tộc, hệ trong đấu trường chân lý</h4>
@@ -208,15 +266,15 @@
                 <span>Copyright © 2019 NonameTeam. All Rights Reserved</span>
                 <ul>
                     <li><a href="https://projectnonameteam.herokuapp.com/"> Trang chủ</a></li>
-                    <li><a href="https://projectnonameteam.herokuapp.com/">Tin nổi bật</a></li>
-                    <li><a href="https://projectnonameteam.herokuapp.com/">Tin game</a></li>
-                    <li><a href="https://projectnonameteam.herokuapp.com/">Tin Esport</a></li>
-                    <li><a href="https://projectnonameteam.herokuapp.com/">Cẩm nang</a></li>
-                    <li><a href="https://projectnonameteam.herokuapp.com/">Video-Ảnh</a></li>
+                    <li><a href="https://projectnonameteam.herokuapp.com/tinnoibat-summoner-rift.html">Tin nổi bật</a></li>
+                    <li><a href="https://projectnonameteam.herokuapp.com/tingame-phantich.html">Tin game</a></li>
+                    <li><a href="https://projectnonameteam.herokuapp.com/tinesport-muclichthidau.html">Tin Esport</a></li>
+                    <li><a href="https://projectnonameteam.herokuapp.com/project/camnang-chienthuat.html">Cẩm nang</a></li>
+                    <li><a class="none" href="https://projectnonameteam.herokuapp.com/videoanh-haihuoc.html">Video-Ảnh</a></li>
                 </ul>
             </div>
             <div class="footer-trai-duoi">
-                <a>Thông tin liên hệ</a>
+                <a href="https://projectnonameteam.herokuapp.com/thongtinlienhe.html">Thông tin liên hệ</a>
                 <ul>
                     <li>No name team </li>
                     <li>Phòng 208 - Lớp T1907M</li>
@@ -226,11 +284,13 @@
             </div>
         </div>
         <div class="footer-phai">
-            <a href="https://projectnonameteam.herokuapp.com/"> <img src="logo2.png"/></a>
+            <a href="https://projectnonameteam.herokuapp.com/"> <img width="333px" src="logo2.png"/></a>
         </div>
     </div>
+
+    <a class="vedautrang"><i class="fas fa-arrow-circle-up"></i></a>
+
 </footer>
-<a class="vedautrang">Về đầu trang</a>
 <script type="text/javascript" src="homejs.js">
 </script>
 </body>
