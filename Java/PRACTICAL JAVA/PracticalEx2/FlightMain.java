@@ -10,6 +10,7 @@ package PracticalEx2;
  * @author NguyenThanhTuan
  */
 public class FlightMain {
+
     public static void main(String[] args) {
         Flight objFlight = new Flight(857, "Toronto");
         objFlight.displayFlight();

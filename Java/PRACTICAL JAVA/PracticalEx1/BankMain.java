@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author NguyenThanhTuan
  */
 public class BankMain {
+
     public static void main(String[] args) {
         Bank objBank = new Bank();
         Scanner scanner = new Scanner(System.in);
