@@ -36,6 +36,6 @@ public class Flight {
     }
 
     public void displayFlight() {
-        System.out.println(+number + ", " + destination);
+        System.out.println(+getNumber() + ", " + getDestination());
     }
 }
