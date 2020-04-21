@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Mime;
@@ -9,17 +11,17 @@ namespace Demo
     {
         public int id;
         public string name;
-        public double price;
+        public int price;
         public int qty;
         public string image;
         public string desc;
-        string[] gallery = new string[9];
-
+        public List<String> gallery = new List<string>();
+        public List<Product> Products = new List<Product>();
         public Product()
         {
         }
 
-        public Product(int id, string name, double price, int qty, string image, string desc)
+        public Product(int id, string name, int price, int qty, string image, string desc)
         {
             this.id = id;
             this.name = name;
@@ -31,43 +33,78 @@ namespace Demo
 
         public void getInfo()
         {
-            Console.WriteLine("id: " +id +"\nname: "+name+"\nprice: "+price+"\nqty: "+qty+"\nimage: "+image+"\n+desc: "+desc);
+            Console.WriteLine("Product list: ");
+            foreach (Product product in Products)
+            {
+                Console.WriteLine("id: " +id +"\nname: "+name+"\nprice: "+price+"\nqty: "+qty+"\nimage: "+image+"\n+desc: "+desc);
+            }
         }
 
-        public void checkQty()
+        public void addProduct(Product product)
         {
-            if (qty > 0 )
+            Products.Add(product);
+        }
+        public void checkStock()
+        {
+            string name;
+            Console.WriteLine("Nhap ten sp muon check: ");
+            name = Convert.ToString(Console.ReadLine());
+            foreach (Product product in Products)
             {
-                Console.WriteLine("Con hang");
-            }
+                if (name.Equals(product.name))
+                {
+                    if (product.qty > 0 )
+                    {
+                        Console.WriteLine("Con hang");
+                    }
 
-            Console.WriteLine("Het hang");
+                    Console.WriteLine("Het hang");
+                }
+            }
+            
         }
 
         public void addGallery()
         {
-            var newArray = Convert.ToString(Console.ReadLine());
-            if (gallery.Length > 10)
+            if (gallery.Count < 10)
             {
-                Console.WriteLine("xoa anh truoc khi them");
-                deleteGallery();
+                foreach (Product product in Products)
+                {
+                    gallery.Add(image);
+                }
+
+                Console.WriteLine("Add success");
+                Console.WriteLine("Gallery list: ");
+                foreach (var gallery in gallery)
+                {
+                    Console.WriteLine(gallery);
+                }
             }
             else
             {
-                for (int i = 0; i < gallery.Length; i++)
-                {
-                    gallery[i] = Convert.ToString(Console.ReadLine());
-                }
+                Console.WriteLine("vuot qua so luong anh can xoa bot");
+                deleteGallery();
             }
         }
 
         public void deleteGallery()
         {
-            Console.WriteLine("Chon gallery muon xoa: ");
-            var strInput = Console.ReadLine();
-            for (int i = 0; i < gallery.Length; i++)
+            Console.WriteLine("Gallery list: ");
+            foreach (var gallery in gallery)
             {
-                Console.WriteLine(gallery[i]);
+                Console.WriteLine(gallery);
+            }
+
+            int index;
+            Console.WriteLine("Nhap vao anh muon xoa");
+            index = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < gallery.Count; i++)
+            {
+                if (i == index)
+                {
+                    gallery.RemoveAt(index-1);
+                    Console.WriteLine("Xoa thanh cong");
+                }
             }
         }
         
