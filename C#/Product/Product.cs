@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Mime;
+using Demo.Lab3;
 
 namespace Demo
 {
@@ -11,15 +12,20 @@ namespace Demo
     {
         protected int id;
         protected string name;
-        public double price;
+        protected double price;
         protected uint qty;
         protected string image;
         protected string desc;
         protected List<string> gallery;
-
+        private static int yearCode;
+        private event ShowAlert ChangeQty;
         public Product()
         {
             this.gallery = new List<string>();//dam bao gallery chac chan co o nho
+            if (ChangeQty == null)
+            {
+                ChangeQty += Cart.AlertMessage;
+            }
         }
 
         public Product(int id, string name, double price, uint qty, string image, string desc, List<string> gallery)
@@ -31,8 +37,74 @@ namespace Demo
             this.image = image;
             this.desc = desc;
             this.gallery = gallery;
+            if (ChangeQty == null)
+            {
+                ChangeQty += Cart.AlertMessage;
+            }
         }
 
+
+        public int Id //khai bao properties
+        {
+            get { return id; } //ham tra ve gia tri - read
+            set { this.id = value; } // ham set gia tri - write
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { this.name = value; }
+        }
+
+        public double Price
+        {
+            get { return price; }
+            set { this.price = value; }
+        }
+
+        public uint Qty
+        {
+            get => qty; //lamda expression
+            set
+            {
+                if (qty != 0)
+                {
+                    ChangeQty("So luong sp da duoc chinh sua");
+                }
+
+                qty = value;
+            }
+        }
+
+        public string Image
+        {
+            get => image;
+            set => image = value;
+        }
+
+        public string Desc
+        {
+            get => desc;
+            set => desc = value;
+        }
+
+        public List<string> Gallery
+        {
+            get => gallery;
+           // set => gallery = value;
+        }
+
+        public string this[int index]//tao indexer
+        {
+            get { return gallery[index]; }
+            set { gallery[index] = value; }
+        }
+        
+        public static int YearCode//static property
+        {
+            get => yearCode;
+            set => YearCode = value;
+        }
         public void GetInfo()
         {
             Console.WriteLine("id: " +id +"\nname: "+name+"\nprice: "+price+"\nqty: "+qty+"\nimage: "+image+"\n+desc: "+desc);
