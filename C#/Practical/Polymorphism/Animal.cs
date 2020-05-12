@@ -6,6 +6,10 @@ namespace Demo.Polymorphism
         protected string name;
         protected int weight;
 
+        public Animal()
+        {
+        }
+
         public Animal(string name, int weight)
         {
             this.name = name;
@@ -24,13 +28,13 @@ namespace Demo.Polymorphism
             set => weight = value;
         }
 
-        public void Show()
+        public virtual void Show()
         {
-            Console.WriteLine("name: "+Name);
+            Console.WriteLine("Name: "+Name);
             Console.WriteLine("Weight: "+weight);
         }
 
-        public void SetMe(string name, int weight)
+        public virtual void SetMe(string name, int weight)
         {
             this.name = name;
             this.weight = weight;
